@@ -1,5 +1,6 @@
 import { Button, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 export default function PaginaInicio(){
     return (        
@@ -13,9 +14,9 @@ export default function PaginaInicio(){
             Conheça os planetas do sistema solar
             </Typography>
 
-            <img class="efeito-flutuando" src="/img/astronauta.png" alt="Astronauta flutuando" />
+            <img className="efeito-flutuando" src="/img/astronauta.png" alt="Astronauta flutuando" />
             <Link to="/planetas">
-            <Button variant="contained" size="large">Vamos lá!</Button>
+                <Button variant="contained" size="large"> Vamos lá <KeyboardDoubleArrowRightIcon /></Button>
             </Link>
         </Stack>
     );
