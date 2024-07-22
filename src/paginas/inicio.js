@@ -17,7 +17,7 @@ export default function PaginaInicio(){
 
             <img className="animacaoEfeitoFlutuando" src="/img/astronauta.png" alt="Astronauta flutuando" />
             <Link to="/planetas">
-                <Button variant="contained" size="large"> Vamos lá <KeyboardDoubleArrowRightIcon /></Button>
+                <Button variant="contained" size="large" endIcon={<KeyboardDoubleArrowRightIcon />}> Vamos lá </Button>
             </Link>
         </Stack>
     );
