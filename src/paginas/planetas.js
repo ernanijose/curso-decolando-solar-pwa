@@ -24,6 +24,7 @@ export default function PaginaPlanetas() {
         let respostaApi = await ApiPlanetas.obterTodos();
         // console.log('abriu a pagina', respostaApi);
         setPlanetas(respostaApi);
+        setMsg(null);
       } catch (error) {
         console.error('Erro ao obter planetas:', error);
         setErro({

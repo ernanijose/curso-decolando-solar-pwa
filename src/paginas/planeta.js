@@ -23,6 +23,7 @@ export default function PaginaPlaneta(){
                     throw new Error("Não encontramos o planeta!");
                 }
                 setPlaneta(respostaApi?.[0]);
+                setMsg(null);
               } catch (error) {
                 console.error('Erro ao obter planetas:', error);
                 setErro({
@@ -33,7 +34,7 @@ export default function PaginaPlaneta(){
                 setCarregando(false);
               }
         })()
-    }, []);
+    }, [paremetros]);
 
     async function clickCompartilhar(){
         let resImg = await fetch(planeta?.imgUrl);
