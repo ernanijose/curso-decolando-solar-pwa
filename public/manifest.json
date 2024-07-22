@@ -21,5 +21,13 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#7A37A6",
-  "background_color": "#8746AF"
+  "background_color": "#8746AF",
+  "id": "solar-explorer1601",
+  "lang": "pt",
+  "orientation": "any",
+  "categories": [
+    "education",
+    "entertainment",
+    "kids"
+  ]
 }
