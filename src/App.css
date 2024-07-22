@@ -21,6 +21,10 @@ a{
     background-size: cover;
 }
 
+.containerMargin{
+    padding-top: 2rem;
+}
+
 .animacaoEfeitoFlutuando{
     animation: animacaoEfeitoFlutuando 5s ease-in-out infinite;
 }
@@ -31,5 +35,18 @@ a{
     }
     50%{
         transform: translateY(-20px);
+    }
+}
+
+.animacaoEfeitoGirar{
+    animation: animacaoEfeitoGirar 30s linear infinite;
+}
+
+@keyframes animacaoEfeitoGirar {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }

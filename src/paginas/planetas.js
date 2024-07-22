@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export default function PaginaPlanetas(){
     return (
         <Container maxWidth="lg">
-            <Typography variant="h2" component="h1" textAlign="center" pt={2}>
+            <Typography variant="h2" component="h1" textAlign="center" className="containerMargin">
                 Planetas do sistema solar!
             </Typography>
-            <Grid container spacing={2} pt={2}>
+            <Grid container spacing={2} className="containerMargin">
                 <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
                     <Card className="cardVidro">
                         <Link to="/planeta/test">
